@@ -1,0 +1,9 @@
+/* pages/personal/login/login.wxss */
+
+page{
+  height: 100%;
+}
+.loginWrapper{height: 100%;display: flex;align-items: center;justify-content: center;}
+.buttonWrapper{width: 100%;}
+button{background:#938FD3;color:#fff;width: 80%;margin-top: -160rpx;}
+.button-hover{box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.28);}

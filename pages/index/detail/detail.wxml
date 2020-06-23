@@ -1,0 +1,24 @@
+<!--pages/index/detail/detail.wxml-->
+<view class="container">
+
+<view class="header">
+
+<image src="/images/detail1.png" mode="widthFix"></image>
+</view>
+<view class="line"></view>
+<view class="info-wrapper">
+    <view class="name">阿司匹林肠溶片</view>
+<view class="info"> 规格：30片肠溶片 每片含100mg阿司匹林 </view>
+<view class="">
+    <span>自营<span>
+</view>
+<view class="name">
+<span class="price"></span>
+</view>
+</view>
+
+<view class="footer">
+    <view class="l">咨询药师处方</view>
+    <view class="r">加入清单</view>
+</view>
+</view>

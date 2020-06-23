@@ -1,0 +1,65 @@
+<!--pages/cart/cart.wxml-->
+<view class="container">
+	<view class="card">
+
+		<view class="left">
+			<!-- <i class="iconfont icon-xuanze"></i> -->
+			<i class="iconfont icon-xuanze1"></i>
+		</view>
+		<view class="middle">
+			<image src="/images/cart1.png" mode="widthFix"></image>
+		</view>
+		<view class="right">
+			<view class="title">阿司匹林肠溶片</view>
+			<view class="info">30片肠溶片 每片含100mg阿司匹林</view>
+			<view class="bottom">
+			
+			<view class="price">￥23.00</view>
+			<view class="num-wrapper">
+			 <span class="subtract">-</span>
+			 <span class="num">{{num}}</span>
+			 <span class="add">+</span>
+			</view>
+			</view>
+		</view>
+		<!-- <view class="left"></view> -->
+	</view>
+
+	<view class="card">
+
+		<view class="left">
+			<!-- <i class="iconfont icon-xuanze"></i> -->
+			<i class="iconfont icon-xuanze1"></i>
+		</view>
+		<view class="middle">
+			<image src="/images/cart1.png" mode="widthFix"></image>
+		</view>
+		<view class="right">
+			<view class="title">阿司匹林肠溶片</view>
+			<view class="info">30片肠溶片 每片含100mg阿司匹林</view>
+			<view class="bottom">
+			
+			<view class="price">￥23.00</view>
+			<view class="num-wrapper">
+			 <span class="subtract">-</span>
+			 <span class="num">{{num}}</span>
+			 <span class="add">+</span>
+			</view>
+			</view>
+		</view>
+		<!-- <view class="left"></view> -->
+	</view>
+
+	<!-- <view class="btn-wrapper">
+        <view class="left">合计：￥600</view>
+        <view class="right">提交需求</view>
+    </view> -->
+	<view class="footer">
+		<view class="left">
+		<i class="iconfont icon-xuanze1"></i>全选
+		</view>
+		<view class="middle">合计:<span>￥48</span></view>
+		<view class="right">提交需求</view>
+	</view>
+
+</view>

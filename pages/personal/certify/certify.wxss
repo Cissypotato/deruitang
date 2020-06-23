@@ -1,0 +1,15 @@
+/* pages/personal/certify/certify.wxss */
+.container{padding: 3vw;}
+
+
+.form-wrapper{margin-top: 100rpx;padding: 30rpx;}
+/* form{} */
+.input-item{line-height: 2em;margin-bottom: 40rpx;}
+.input-item>input{border: 1px solid #eee;background: #eee;padding:10rpx 0;border-radius: 10rpx; }
+.placeholder{color: #bbb;font-size: 24rpx;padding-left: 10rpx;}
+.confirm{background:rgba(148, 71, 15, 0.842);color: #fff;margin-top: 20rpx; }
+
+.input-item-1{width: 100%;display: flex;align-items: flex-end}
+.certify_num{width: 25%;}
+.certify_word{color: #fff;text-align: center;background:rgb(180, 157, 141);border-radius: 8rpx;width: 25%;margin-left: 40rpx; font-size: 24rpx;}
+.tip{font-size: 24rpx;color:rgba(148, 71, 15, 0.842) ;margin: 30rpx 0;line-height: 1.6em}

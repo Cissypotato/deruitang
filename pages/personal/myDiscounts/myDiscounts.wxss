@@ -1,0 +1,4 @@
+/* pages/personal/myDiscounts/myDiscounts.wxss */
+page{background: #E5E5E5;}
+.container{text-align: center;}
+.container>image{width: 668rpx;margin-top: 36rpx;}

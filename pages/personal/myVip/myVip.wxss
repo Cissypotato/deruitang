@@ -1,0 +1,6 @@
+/* pages/personal/myVip/myVip.wxss */
+page{ background: #E5E5E5;}
+.container{text-align: center;}
+.isvip{width:100%;}
+.renew{width: 650rpx;margin-top: 60rpx;}
+.time{position: fixed;left: 45rpx;top: 276rpx;color: #F8DFBF;font-size: 35rpx;}

@@ -1,0 +1,20 @@
+<!--pages/index/search/search.wxml-->
+<view class="container">
+<view class="search-wrapper">
+ <input placeholder="请输入药品名"></input>
+  <span></span>
+</view>
+
+<view class="help">
+  <view class="contract-help">
+  
+  <button open-type="contact" bindcontact="handleContact">客服找药</button>
+  </view>
+  
+  <view class="picture-recognize">拍盒找药</view>
+  <view class="code-recognize">扫条形码</view>
+</view>
+
+<view class="history"></view>
+<view class="hot-tag"></view>
+</view>

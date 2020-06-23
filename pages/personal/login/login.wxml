@@ -1,0 +1,10 @@
+<!--pages/personal/login/login.wxml-->
+<view class="loginWrapper">
+
+  <view class="buttonWrapper">
+      <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+  </view>
+
+
+
+</view>

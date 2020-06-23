@@ -1,0 +1,58 @@
+<!--pages/personal/personal.wxml-->
+<view class="container">
+	<view class="header">
+		<view class="avatar-wrapper"  wx:if="{{user_id}}">
+		<open-data type="userAvatarUrl" class="avatar" mode="cover"></open-data>
+		</view>
+		 
+      
+		<image src="../../images/cc2.png" mode="widthFix" wx:else></image>
+		<view class="info">
+		 <open-data type="userNickName" class="tel" wx:if="{{user_id}}"></open-data>
+			<!-- <view class="tel" wx:if="{{user_id}}">{{show_tel}}</view> -->
+			<view class="tel" wx:else bindtap="toLogin">请登录</view>
+			
+		</view>
+	</view>
+	<view class="main">
+		<view class="item" bindtap="toPage" data-id="1">
+			<image src="../../images/icon1.png" mode="widthFix"></image>
+			<span>我的订单</span>
+			<!-- <span class="more">></span> -->
+			<image src="/images/more.png" mode="widthFix" class="more"></image>
+		</view>
+		<view class="line"></view>
+        <!-- <view class="item" bindtap="toPage" data-id="2">
+			<image src="../../images/icon2.png" mode="widthFix"></image>
+			<span>我的优惠</span>
+			
+			<image src="/images/more.png" mode="widthFix" class="more"></image>
+		</view> -->
+        
+		<view class="line"></view>
+        <view class="item" bindtap="toPage" data-id="3">
+			<image src="../../images/icon3.png" mode="widthFix"></image>
+			<span>我的地址</span>
+			<!-- <span class="more">></span> -->
+			<image src="/images/more.png" mode="widthFix" class="more"></image>
+		</view>
+		 <view class="item" bindtap="toPage" data-id="5">
+			<image src="../../images/icon3.png" mode="widthFix"></image>
+			<span>身份认证</span>
+			<!-- <span class="more">></span> -->
+			<image src="/images/more.png" mode="widthFix" class="more"></image>
+		</view>
+		<view class="line"></view>
+        <!-- <view class="item" bindtap="toPage" data-id="4">
+			<image src="../../images/icon4.png" mode="widthFix"></image>
+			<span>我的会员</span>
+			<image src="/images/more.png" mode="widthFix" class="more"></image>
+		</view> -->
+		
+
+	</view>
+
+</view>
+
+<!-- 登录 -->
+<login showLogin="{{showLogin}}" bindmyevent="onMyEvent"></login>

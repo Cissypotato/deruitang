@@ -1,0 +1,30 @@
+<!--pages/personal/certify/certify.wxml-->
+<view class="container">
+
+
+
+ <form bindsubmit="certifySubmit">
+    <view class="input-item">
+      <input placeholder="请填写预约人的真实姓名" placeholder-class="placeholder" name="name"></input>
+      
+    </view>
+    <view class="input-item">
+      <input placeholder="请填写预约人的身份证号码" placeholder-class="placeholder" name="id_card"></input>
+    </view>
+    <view class="input-item">
+      <input placeholder="请填写预约人的手机号码" placeholder-class="placeholder" name="tel" bindblur="getInputValue" id="tel"></input>
+    </view>
+    <view class=" input-item input-item-1">
+      <input name="certify_num" class="certify_num" placeholder="验证码" placeholder-class="placeholder" id="certify_num" bindblur="getInputCertify"></input> 
+       <view class="certify_word" wx:if="{{showSecond}}">{{second}} s</view>
+      <view class="certify_word" bindtap="getCertifyNum" wx:else>获取验证码</view>
+     
+    </view>
+    <view class="tip">温馨提示：已在殊德医馆通过手机号就诊过的用户，将自动为您绑定线下就诊卡</view>
+
+    <view class="">
+      <button class="confirm" form-type="submit">确认</button>
+    </view>
+
+  </form>
+</view>

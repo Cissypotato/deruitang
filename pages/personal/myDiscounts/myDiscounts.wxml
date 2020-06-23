@@ -1,0 +1,10 @@
+<!--pages/personal/myDiscounts/myDiscounts.wxml-->
+<view class="container">
+
+
+<image src="/images/quan1.png" mode="widthFix" wx:if="{{status==0}}"></image>
+<image src="/images/quan2.png" mode="widthFix" wx:else></image>
+<image src="/images/quan3.png" mode="widthFix" wx:if="{{is_air==0}}"></image>
+<image src="/images/quan4.png" mode="widthFix" wx:else></image>
+
+</view>

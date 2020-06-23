@@ -1,0 +1,203 @@
+<!--pages/personal/order/order.wxml-->
+
+<!-- 个人信息 -->
+<!-- <view>
+   <view class="My_details">
+      <image wx:if="{{data.vip==1}}" src="/images/cc1.png" mode="widthFix"></image>
+      <image wx:if="{{data.vip==0}}" src="/images/cc2.png" mode="widthFix"></image>
+      <view class="content">
+         <view class="content_tel">{{data.tel}}</view>
+         <view class="content_vip" wx:if="{{data.vip==1}}">VIP会员</view>
+         <view class="content_vip" wx:if="{{data.vip==0}}">普通用户</view>
+      </view>
+   </view>
+</view> -->
+<!-- 已经开通vip -->
+<!-- <view class="advertising" wx:if="{{data.vip==1}}" bindtap="renew">
+   <image class="back" src="/images/mm1.png" mode="widthFix"></image>
+   <view class="vip_time">{{tomorrowSS}}至{{tomorrowS}}到期</view>
+</view> -->
+<!-- 还未开通vip -->
+<!-- <view class="advertising" wx:if="{{data.vip==0}}">
+   <image class="back" src="/images/mm2.png" mode="widthFix" bindtap="goVip"></image>
+</view> -->
+<!-- 导航条 -->
+<view class="header">
+   <view class="{{isArr1?'active':''}} nav-item" bindtap="changeArr" data-arr="1">全部</view>
+   <view class="{{isArr2?'active':''}} nav-item" data-arr="2" bindtap="changeArr">待服务</view>
+   <view class="{{isArr3?'active':''}} nav-item" bindtap="changeArr" data-arr="3">已完成</view>
+</view>
+<!-- 内容 -->
+<view class="main">
+   <!-- 全部 -->
+   <view wx:if="{{isArr1}}">
+      <view wx:if="{{arr1.length>0}}">
+         <view class="card" wx:for="{{arr1}}" wx:key='item'>
+            <view class="title">{{item.shop_name}}
+               <span wx:if="{{item.status==1}}">待服务</span>
+               <span wx:if="{{item.status==2}}" class="finished">已完成</span>
+            </view>
+            <view class="item">
+               <span class="left">服务时间：</span>
+               <span class="right">{{item.start_time}}</span>
+            </view>
+            <view class="item">
+               <span class="left">服务地址：</span>
+               <span class="right"> {{item.place}}</span>
+            </view>
+            <view class="item">
+               <span class="left">服务费用：</span>
+               <span class="right"> {{item.pay_price}}元</span>
+            </view>
+            <view class="item" wx:if="{{item.overtime!=0}}">
+               <span class="left">超时费用：</span>
+               <span class="right"> {{item.overtime}}元</span>
+            </view>
+            <view class="add-money-item" wx:if="{{item.status==1}}">
+               <span class="add-money" data-index="{{index}}" data-id="{{item.id}}" bindtap="changeDate">更改日期</span>
+               <span class="add-money" data-id="{{item.id}}" bindtap="addMoney">超时加费</span>
+            </view>
+
+
+         </view>
+      </view>
+      <view class="no-data" wx:else>
+         <!-- <view class="nodata-img-wrapper"> -->
+            <image src="/images/noitem.png" mode="widthFix"></image>
+         <!-- </view> -->
+         <view>暂时没有数据</view>
+      </view>
+   </view>
+   <!-- 待服务 -->
+   <view wx:if="{{isArr2}}">
+      <view wx:if="{{arr2.length>0}}">
+         <view class="card" wx:for="{{arr2}}">
+            <view class="title">{{item.shop_name}}
+               <span wx:if="{{item.status==1}}">待服务</span>
+               <span wx:if="{{item.status==2}}" class="finished">已完成</span>
+            </view>
+            <view class="item">
+               <span class="left">服务时间：</span>
+               <span class="right">{{item.start_time}}</span>
+            </view>
+            <view class="item">
+               <span class="left">服务地址：</span>
+               <span class="right"> {{item.place}}</span>
+            </view>
+            <view class="item">
+               <span class="left">服务费用：</span>
+               <span class="right"> {{item.pay_price}}元</span>
+            </view>
+            <view class="item" wx:if="{{item.overtime!=0}}">
+               <span class="left">超时费用：</span>
+               <span class="right"> {{item.overtime}}元</span>
+            </view>
+            <view class="add-money-item" wx:if="{{item.status==1}}">
+               <span class="add-money" data-index="{{index}}" data-id="{{item.id}}" bindtap="changeDate">更改日期</span>
+               <span class="add-money" data-id="{{item.id}}" bindtap="addMoney">超时加费</span>
+            </view>
+         </view>
+      </view>
+      <view class="no-data" wx:else>
+         <!-- <view class="nodata-img-wrapper"> -->
+            <image src="/images/noitem.png" mode="widthFix"></image>
+         <!-- </view> -->
+         <view>暂时没有数据</view>
+      </view>
+   </view>
+   <!-- 已完成 -->
+   <view wx:if="{{isArr3}}">
+      <view wx:if="{{arr3.length>0}}">
+         <view class="card" wx:for="{{arr3}}" wx:key="item">
+            <view class="title">{{item.shop_name}}
+               <span wx:if="{{item.status==1}}">待服务</span>
+               <span wx:if="{{item.status==2}}" class="finished">已完成</span>
+            </view>
+            <view class="item">
+               <span class="left">服务时间：</span>
+               <span class="right">{{item.start_time}}</span>
+            </view>
+            <view class="item">
+               <span class="left">服务地址：</span>
+               <span class="right"> {{item.place}}</span>
+            </view>
+            <view class="item">
+               <span class="left">服务费用：</span>
+               <span class="right"> {{item.pay_price}}元</span>
+            </view>
+            <view class="item" wx:if="{{item.overtime!=0}}">
+               <span class="left">超时费用：</span>
+               <span class="right"> {{item.overtime}}元</span>
+            </view>
+         </view>
+      </view>
+      <view class="no-data" wx:else>
+         <!-- <view class="nodata-img-wrapper"> -->
+            <image src="/images/noitem.png" mode="widthFix"></image>
+         <!-- </view> -->
+         <view>暂时没有数据</view>
+      </view>
+   </view>
+</view>
+
+
+
+
+<view class="cover" bindtap="handleCover" catchtouchmove="move" wx:if="{{isAddMoney}}" data-type="money">
+   <view class="add-money-card" catchtap='blueclick'>
+      <view class="title">
+         {{order.name}}
+      </view>
+      <view class="price">
+         单价 :
+         <span>{{order.price}}元/小时</span>
+      </view>
+      <view class="order_two_num">
+         <text class="order_two_name_text">购买数量</text>
+         <view class="order_two_num_two">
+            <view class="order_two_num_add" bindtap="reduce">-</view>
+            <span class="order_two_num_inputs">{{order_data.num}}</span>
+            <view class="order_two_num_add" bindtap="add">+</view>
+         </view>
+      </view>
+      <view class="total">
+         <span>总价：
+            <span>{{order_data.price}}</span>元</span>
+      </view>
+      <view class="pay">
+
+         <span bindtap="confirm">确定支付</span>
+      </view>
+
+   </view>
+
+
+</view>
+
+<view class="cover" bindtap="handleCover" catchtouchmove="move" wx:if="{{isChangeDate}}" data-type="date">
+   <view class="add-money-card" catchtap='blueclick'>
+      <view class="title">
+         <!-- {{order.name}} -->
+         更改预约时间
+      </view>
+
+      <view class="info">
+         温馨提示：服务时间段不能更改，您只能更改未来7天的日期
+      </view>
+      <view class="section">
+         <picker mode="date" value="{{date}}" start="{{tomorrowS}}" end="{{future7S}}" bindchange="bindDateChange">
+            <view class="picker">
+               下拉选择:
+               <span> {{date}}</span>
+            </view>
+         </picker>
+      </view>
+      <view class="pay">
+
+         <span bindtap="confirmChangeDate">确定更改</span>
+      </view>
+
+   </view>
+
+
+</view>

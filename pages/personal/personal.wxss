@@ -1,0 +1,38 @@
+
+/* pages/personal/personal.wxss */
+page{background: #E5E5E5;}
+
+.header{height: 320rpx;background: #FFFFFF;box-shadow: 0px 4rpx 4rpx #C7C7CC;margin-top: 3rpx;display: flex;padding: 100rpx 0;box-sizing: border-box;}
+.header>image{width: 120rpx;height: 120rpx;margin-left: 44rpx;margin-right: 34rpx;}
+.avatar-wrapper{width: 120rpx;height: 120rpx;border-radius: 50%;margin-left: 44rpx;margin-right: 34rpx;overflow:hidden}
+/* .avatar{width: 120rpx;height: 120rpx;border-radius: 50%;margin-left: 44rpx;margin-right: 34rpx;} */
+.header>.info{display: flex;flex-direction: column;justify-content: center;}
+.tel{font-family: PingFang SC;font-style: normal;font-weight: bold;font-size: 34rpx;line-height: 48rpx; color: #353535;}
+.is-vip{font-family: PingFang SC; font-style: normal;font-size: 28rpx;line-height: 39rpx;color: #353535;}
+
+
+.main{background: #fff;margin-top: 28rpx;}
+
+.item{padding:40rpx 63rpx 40rpx 42rpx;display: flex;align-items: center; position: relative;}
+.item>image{width: 70rpx;margin-right: 32rpx;font-weight: bold; font-size: 32rpx;color: #4E4F54;}
+.item>.more{position: absolute;right: 63rpx;color:#C7C7CC;width: 15rpx;margin-right: 0;}
+
+.line{background: #E5E5E5;height: 1rpx;margin-left: 100rpx;}
+
+/* pages/personal/personal.wxss
+page{background: #E5E5E5;}
+
+.header{height: 320rpx;background: #FFFFFF;box-shadow: 0px 4rpx 4rpx #C7C7CC;margin-top: 3rpx;display: flex;padding: 100rpx 0;box-sizing: border-box;}
+.header>image{width: 120rpx;height: 120rpx;margin-left: 44rpx;margin-right: 34rpx;}
+.header>.info{display: flex;flex-direction: column;justify-content: center;}
+.tel{font-family: PingFang SC;font-style: normal;font-weight: bold;font-size: 34rpx;line-height: 48rpx; color: #353535;}
+.is-vip{font-family: PingFang SC; font-style: normal;font-size: 28rpx;line-height: 39rpx;color: #353535;}
+
+
+.main{background: #fff;margin-top: 28rpx;}
+
+.item{padding:40rpx 63rpx 40rpx 42rpx;display: flex;align-items: center; position: relative;}
+.item>image{width: 70rpx;margin-right: 32rpx;font-weight: bold; font-size: 32rpx;color: #4E4F54;}
+.item>.more{position: absolute;right: 63rpx;color:#C7C7CC;width: 15rpx;margin-right: 0;}
+
+.line{background: #E5E5E5;height: 1rpx;margin-left: 100rpx;} */

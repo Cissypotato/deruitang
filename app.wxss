@@ -1,0 +1,6 @@
+/**app.wxss**/
+
+@import './utils/iconfont.wxss';
+
+ page{box-sizing: border-box;}
+.container{box-sizing: border-box;}

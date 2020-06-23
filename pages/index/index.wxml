@@ -1,0 +1,202 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="header">
+		<view class="search">
+			<!-- <span></span> -->
+			<input placeholder="搜索药名" bindfocus="tosearch"></input>
+			<image src="/images/search.png" mode="widthFix"></image>
+		</view>
+		<view class="hot-tag">
+			<span>一次性口罩</span><span>消毒液</span><span>酒精</span><span>一次性口罩</span>
+
+		</view>
+		<view class="banner">
+			<image src="/images/banner.png" mode="widthFix"></image>
+		</view>
+	</view>
+
+
+	<view class="sorts">
+		<view class="item">
+			<image src="/images/sort1.png" mode="widthFix"></image>
+			<text>医用口罩</text>
+		</view>
+		<view class="item">
+			<image src="/images/sort2.png" mode="widthFix"></image>
+			<text>免疫力</text>
+		</view>
+		<view class="item">
+			<image src="/images/sort3.png" mode="widthFix"></image>
+			<text>常用药品</text>
+		</view>
+		<view class="item">
+			<image src="/images/sort4.png" mode="widthFix"></image>
+			<text>夏季消暑</text>
+		</view>
+	</view>
+	<view class="infos">
+		<view class="left">
+			<image src="/images/info1.png" mode="widthFix"></image>
+		</view>
+		<view class="right">
+			<view>
+				<image src="/images/info2.png" mode="widthFix"></image>
+			</view>
+			<view>
+				<image src="/images/info3.png" mode="widthFix"></image>
+			</view>
+		</view>
+	</view>
+	<view class="tags-wrapper">
+		<view class="item">
+			<image src="/images/tag1.png" mode="widthFix"></image>
+			<text>慢性用药</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag2.png" mode="widthFix"></image>
+			<text>男科用药</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag3.png" mode="widthFix"></image>
+			<text>妇科用药</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag4.png" mode="widthFix"></image>
+			<text>滋补养生</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag5.png" mode="widthFix"></image>
+			<text>肝胆用药</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag6.png" mode="widthFix"></image>
+			<text>皮肤过敏</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag7.png" mode="widthFix"></image>
+			<text>维矿物质</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag8.png" mode="widthFix"></image>
+			<text>营养保健</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag9.png" mode="widthFix"></image>
+			<text>家用器械</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag10.png" mode="widthFix"></image>
+			<text>性福生活</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag11.png" mode="widthFix"></image>
+			<text>个人护理</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag12.png" mode="widthFix"></image>
+			<text>养生花茶</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag13.png" mode="widthFix"></image>
+			<text>风湿骨痛</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag14.png" mode="widthFix"></image>
+			<text>医疗器械</text>
+		</view>
+		<view class="item">
+			<image src="/images/tag15.png" mode="widthFix"></image>
+			<text>母婴育儿</text>
+		</view>
+
+	</view>
+
+	<view class="section">
+		<view class="title-wrapper">
+			<span class="title">热门药品推荐</span>
+			<span class="more">全部商品》</span>
+		</view>
+		<view class="medicine">
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="section">
+		<view class="title-wrapper">
+			<span class="title">每日低价</span>
+			<span class="more">全部商品》</span>
+		</view>
+		<view class="medicine">
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+		</view>
+	</view>
+	<view class="section">
+		<view class="title-wrapper">
+			<span class="title">积分商城</span>
+			<span class="more">全部商品》</span>
+		</view>
+		<view class="medicine">
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+			<view class="item">
+				<view class="image-wrapper">
+					<image src="/images/blg.png" mode="widthFix"></image>
+				</view>
+				<view class="name">复方板蓝根颗粒233333</view>
+				<view class="price"><span>￥</span>19.9</view>
+			</view>
+		</view>
+	</view>
+</view>

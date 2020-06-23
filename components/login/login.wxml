@@ -1,0 +1,18 @@
+<!--components/login/login.wxml-->
+<view class="cover" wx:if="{{showLogin}}">
+	<view class="login">
+		<view class="title">登录后查看更多服务</view>
+		<view class="tel">
+			<input type="number" placeholder="请输入您的手机号码" placeholder-class="placeholder" bindinput="getInputValue" data-name="tel"></input>
+		</view>
+		<view class="certifycode">
+			<input name='certifycode' placeholder="请输入验证码" placeholder-class="placeholder" bindinput="getInputValue" data-name="code"></input>
+			<span wx:if="{{showSecond}}">{{second}} s</span>
+			<span bindtap="getCode" wx:else>获取验证码</span>
+		</view>
+		<view class="btn">
+			<span class="cancel" bindtap="closeLogin">取消</span>
+			<span class="login-w" bindtap="login">登录</span>
+		</view>
+	</view>
+</view>

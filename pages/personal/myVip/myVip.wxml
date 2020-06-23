@@ -1,0 +1,6 @@
+<!--pages/personal/myVip/myVip.wxml-->
+<view class="container">
+	<image src="/images/isvip.png" mode="widthFix" class="isvip"></image>
+	<view class="time">{{tomorrowSS}} 至 {{tomorrowS}}</view>
+	<image src="/images/renew.png" mode="widthFix" class="renew" bindtap="renew"></image>
+</view>

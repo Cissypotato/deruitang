@@ -1,0 +1,104 @@
+/* components/login/login.wxss */
+
+/*cover*/
+ 
+.cover {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .login {
+    width: 80vw;
+    left: 5vw;
+    background: #fff;
+    padding: 10vw 5vw;
+    position: absolute;
+    top: 30vh;
+    border-radius: 4px;
+ }
+ 
+ .login>.title {
+    font-weight: 600;
+    width: 70vw;
+    padding-bottom: 2vw;
+    font-size: 1.1em;
+ }
+ 
+ .login>.tel {
+    width: 80vw;
+    margin: 5vw 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+ }
+ 
+ .login>.tel>input {
+    font-size: 1em;
+    height: 2.6em;
+    line-height: 2.6em;
+    margin-left: 0.5em;
+ }
+ 
+ .login>.certifycode {
+    width: 80vw;
+    margin: 5vw 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    height: 2.6em;
+    line-height: 2.6em;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .login>.certifycode>input {
+    height: 2.6em;
+    line-height: 2.6em;
+    margin-left: 0.5em;
+    width: 60%;
+ }
+ 
+ .login>.certifycode>span {
+    color: #00bcd4;
+    font-size: 0.8em;
+    padding: 0 0.5em;
+    background: #e0f7fa;
+ }
+ 
+ .login>.btn {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+ }
+ 
+ .login>.btn>span {
+    display: inline-block;
+    border-radius: 4px;
+    height: 12vw;
+    line-height: 12vw;
+    margin-top: 3vw;
+    font-size: 0.9em;
+    text-align: center;
+    width: 30vw;
+ }
+ 
+ .login>.btn>.cancel {
+    margin-left: 5vw;
+    color: #009688;
+    float: left;
+    font-size: 0.8em;
+    background: #e0f2f1;
+ }
+ 
+ .login>.btn>.login-w {
+    margin-right: 5vw;
+    background: #009688;
+    color: #fff;
+    float: right;
+ }
+ 

@@ -1,0 +1,52 @@
+/**index.wxss**/
+.container{padding: 37rpx 32rpx;width: 100vw;background-color: #fff;min-height: 100vh;}
+
+
+.header{background: linear-gradient(251.19deg, #7364E1 31.94%, #7EA8FE 95.28%), #29AA67;position: absolute;width: 100%;top: 0;left: 0;height: 330rpx;}
+/*顶部搜索框*/
+.search{width: 680rpx;height: 80rpx;background: #FFFFFF;border-radius: 10rpx;margin:37rpx auto 0;display: flex;align-items: center;}
+.search>input{width: 80%;height: 100%;padding-left: 20rpx;}
+.search>image{width: 60rpx;}
+.hot-tag{width: 680rpx;margin:28rpx auto 0;margin-left: 70rpx;}
+.hot-tag>span{font-size: 24rpx;line-height: 34rpx;color: #FFFFFF;margin-right: 36rpx;}
+
+
+/*slider*/
+.banner{width: 680rpx; background: #FFFFFF;border-radius: 10rpx;margin: 20rpx auto 0; overflow: hidden;}
+.banner>image{width: 100%;vertical-align: bottom;}
+
+
+/*药品热门分类*/
+.sorts{display: flex;width: 100%;justify-content: space-between;margin-top: 32rpx;margin-top: 460rpx;}
+.sorts>.item{width: 131rpx;border-radius: 30rpx;text-align: center;}
+.sorts>.item>image{width: 100%;}
+.sorts>.item>text{font-size: 28rpx;line-height: 39rpx;text-align: center;color: #4E4F54;}
+
+/*文章推荐模块*/
+.infos{display: flex;width: 100%;justify-content: space-between;margin-top: 32rpx;}
+.infos>.left{width: 350rpx;height: 280rpx;background: #FFFFFF;border-radius: 10rpx;}
+.infos>.right{display: flex;flex-direction: column;justify-content: space-between;}
+.infos>.right>view{width: 300rpx; height: 130rpx; background: #FFFFFF;border-radius: 10rpx;}
+.infos>.left>image,.infos>.right>view>image{width: 100%;}
+
+
+.tags-wrapper{display: flex;flex-wrap: wrap;width: 100%;justify-content: space-between;}
+.tags-wrapper>.item{width: 100rpx;text-align: center;margin-top: 53rpx;margin-right: 36rpx;}
+.tags-wrapper>.item:nth-child(5n){margin-right: 0;}
+.tags-wrapper>.item>image{width: 100%;}
+.tags-wrapper>.item>text{font-size: 24rpx;line-height: 34rpx; text-align: center;color: #4E4F54;}
+
+
+/*药品推荐模块*/
+.section{margin-top: 49rpx;}
+.title-wrapper{display: flex;justify-content: space-between;width: 100%;align-items: center;}
+.title-wrapper>.title{font-size: 34rpx;line-height: 48rpx; color: #4E4F54;}
+.title-wrapper>.more{font-size: 24rpx;line-height: 34rpx;color: #979797;}
+
+.medicine{display: flex;justify-content: space-between;width: 100%;margin-top: 30rpx;}
+.medicine>.item{}
+.medicine>.item>.image-wrapper{width: 200rpx;height: 200rpx;background: #FFFFFF;border-radius: 10rpx;}
+.medicine>.item>.image-wrapper>image{width: 100%;}
+.medicine>.item>.name{font-size: 25rpx;line-height: 35rpx;color: #4E4F54;margin-top: 15rpx;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 200rpx;}
+.medicine>.item>.price{font-size: 32rpx;line-height: 45rpx; color: #E64340;font-weight: 500;}
+.medicine>.item>.price>span{font-size: 20rpx;line-height: 28rpx; color: #E64340;}
